@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.verticalDiv {
+    display: flex;
+}
+
+.box {
+    border: 1px solid black;
+    justify-content: stretch;
+}
+
+button {
+    display: flex;
+    margin: 12px auto;
+}
