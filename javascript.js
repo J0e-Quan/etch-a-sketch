@@ -47,16 +47,19 @@ boxes.forEach((box) => {
 let btn = document.querySelector("button")
 btn.addEventListener('click', () => {
     canvasSize = prompt("Change the size of your canvas! (Pick number between 1 to 100", 16);
-    let allBoxes = document.querySelectorAll(".box");
-    allBoxes.forEach((box) => box.remove());
-    createDivs(canvasSize);
-    boxes = document.querySelectorAll(".horizontalDiv")
-    boxes.forEach((box) => {
-        let targetBox = box
-        console.log(targetBox)
-        targetBox.addEventListener('mouseenter', () => {
-            let randomColour = getRandomColour()
-            targetBox.style.backgroundColor = randomColour;
+    if (canvasSize <= 100) {
+        let allBoxes = document.querySelectorAll(".box");
+        allBoxes.forEach((box) => box.remove());
+        createDivs(canvasSize);
+        boxes = document.querySelectorAll(".horizontalDiv")
+        boxes.forEach((box) => {
+            let targetBox = box
+            console.log(targetBox)
+            targetBox.addEventListener('mouseenter', () => {
+                let randomColour = getRandomColour()
+                targetBox.style.backgroundColor = randomColour;
+            });
         });
-    });
+    } else {
+    }
 });
