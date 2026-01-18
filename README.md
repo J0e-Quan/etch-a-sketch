@@ -19,3 +19,7 @@ Live demo link: https://j0e-quan.github.io/etch-a-sketch/
 ![Picture showing a painted 16 by 16 grid](./readme-assets/painted.jpeg)
 ![Picture showing a painted 6 by 6 grid](./readme-assets/painted-small.jpeg)
 ![Picture showing a painted 64 by 64 grid](./readme-assets/painted-big.jpeg)
+
+## Getting started:
+1. clone this repo in your desired folder: `git clone https://github.com/J0e-Quan/etch-a-sketch.git`
+2. open index.html in your browser to run the code
